@@ -1,0 +1,29 @@
+package com.skillsoft.mocks;
+
+public class ResourceProvisioner {
+	
+	private String cloudPlatform;
+	private String authenticationKey;
+	
+	public ResourceProvisioner(String cloudPlatform, String authenticationKey) {
+		
+		this.cloudPlatform = cloudPlatform;
+		this.authenticationKey = authenticationKey;
+	}
+	
+	public boolean setupSingleMachine(String operatingSystem, String framework) {
+		
+		//Note: Assume this makes the right calls to set up a single machine,installs the operating system,
+		// and installs the software packages on the machine .
+		
+		return true;
+	}
+	
+	public boolean setupCluster(int numMachines, String operatingSystem, String frameWork) {
+		
+		//Note: Assume this makes the right calls to set up a cluster of machines,configures networking,
+		//installs the operating system, and installs the software packages on the machine .
+		
+		return true;
+	}
+}
